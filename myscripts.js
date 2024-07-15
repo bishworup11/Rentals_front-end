@@ -49,9 +49,9 @@ copyLinkBtn.addEventListener('click', () => {
         .catch(err => console.error('Failed to copy: ', err));
 });
 
-document.querySelector('.show-all').addEventListener('click', () => {
-    alert('Show all photos functionality would be implemented here');
-});
+// document.querySelector('.show-all').addEventListener('click', () => {
+//     alert('Show all photos functionality would be implemented here');
+// });
 
 //any where modal
 
@@ -305,3 +305,38 @@ window.addEventListener("click", (e) => {
     guestModal.style.display = "none";
   }
 });
+
+
+// show all image modal /////////////////////////////////////////////////////////////////////////////////////////////
+
+const images = ['image/hotel1.jpg', 'image/hotel2.jpg', 'image/hotel3.jpg', 'image/hotel4.jpg', 'image/hotel5.jpg'];
+let currentIndex = 0;
+const modalImage = document.getElementById('mymodalImage');
+const modalImageImg = document.getElementById('modalImageImage');
+const imageCount = document.getElementById('imageCount');
+
+function openmodalImage(index) {
+    modalImage.style.display = 'block';
+    currentIndex = index;
+    updatemodalImageImage();
+}
+
+function closemodalImage() {
+    modalImage.style.display = 'none';
+}
+
+function changeImage(step) {
+    currentIndex = (currentIndex + step + images.length) % images.length;
+    updatemodalImageImage();
+}
+
+function updatemodalImageImage() {
+    modalImageImg.src = images[currentIndex];
+    imageCount.textContent = `${currentIndex + 1} / ${images.length}`;
+}
+
+window.onclick = function(event) {
+    if (event.target == modalImage) {
+        closemodalImage();
+    }
+}

@@ -48,18 +48,35 @@
       </nav>
     </header>
 
-
     <!-- This is  RegionModal  -->
 
     <div id="regionModal">
       <h3>Search by region</h3>
       <div class="region-options">
-        <div class="region-option">  <img src="image/regonal1.jpg" alt="Menu" class="regonal-image" /> <p>I'm flexible</p></div>
-        <div class="region-option"> <img src="image/regonal2.webp" alt="Menu" class="regonal-image" /><p>Southeast Asia</p></div>
-        <div class="region-option"> <img src="image/regonal3.webp" alt="Menu" class="regonal-image" /><p>Canada</p></div>
-        <div class="region-option"><img src="image/regonal4.webp" alt="Menu" class="regonal-image" /><p>Thailand</p></div>
-        <div class="region-option"><img src="image/regonal5.webp" alt="Menu" class="regonal-image" /><p>Europe</p></div>
-        <div class="region-option"><img src="image/regonal6.webp" alt="Menu" class="regonal-image" /><p>Middle East</p></div>
+        <div class="region-option">
+          <img src="image/regonal1.jpg" alt="Menu" class="regonal-image" />
+          <p>I'm flexible</p>
+        </div>
+        <div class="region-option">
+          <img src="image/regonal2.webp" alt="Menu" class="regonal-image" />
+          <p>Southeast Asia</p>
+        </div>
+        <div class="region-option">
+          <img src="image/regonal3.webp" alt="Menu" class="regonal-image" />
+          <p>Canada</p>
+        </div>
+        <div class="region-option">
+          <img src="image/regonal4.webp" alt="Menu" class="regonal-image" />
+          <p>Thailand</p>
+        </div>
+        <div class="region-option">
+          <img src="image/regonal5.webp" alt="Menu" class="regonal-image" />
+          <p>Europe</p>
+        </div>
+        <div class="region-option">
+          <img src="image/regonal6.webp" alt="Menu" class="regonal-image" />
+          <p>Middle East</p>
+        </div>
       </div>
     </div>
 
@@ -68,77 +85,125 @@
     <!-- This is  DateModal  -->
     <div id="dateModal" class="modal">
       <div class="modal-content">
-          <div class="header1">
-              <button onclick="changeMonth(-1)">&#8592;</button>
-              <h2>Select Dates</h2>
-              <button onclick="changeMonth(1)">&#8594;</button>
-          </div>
-          <div class="calendars">
-              <div class="calendar" id="calendar1"></div>
-              <div class="calendar" id="calendar2"></div>
-          </div>
-          <div class="date-options">
-              <button onclick="setExactDates()">Exact dates</button>
-              <button onclick="setDateRange(1)">± 1 day</button>
-              <button onclick="setDateRange(2)">± 2 days</button>
-              <button onclick="setDateRange(3)">± 3 days</button>
-              <button onclick="setDateRange(7)">± 7 days</button>
-              <button onclick="setDateRange(14)">± 14 days</button>
-          </div>
+        <div class="header1">
+          <button onclick="changeMonth(-1)">&#8592;</button>
+          <h2>Select Dates</h2>
+          <button onclick="changeMonth(1)">&#8594;</button>
+        </div>
+        <div class="calendars">
+          <div class="calendar" id="calendar1"></div>
+          <div class="calendar" id="calendar2"></div>
+        </div>
+        <div class="date-options">
+          <button onclick="setExactDates()">Exact dates</button>
+          <button onclick="setDateRange(1)">± 1 day</button>
+          <button onclick="setDateRange(2)">± 2 days</button>
+          <button onclick="setDateRange(3)">± 3 days</button>
+          <button onclick="setDateRange(7)">± 7 days</button>
+          <button onclick="setDateRange(14)">± 14 days</button>
+        </div>
       </div>
-  </div>
+    </div>
     <!-- Therer are DateModal end -->
 
     <!-- This is GuestModal -->
 
     <div id="guestModal">
       <div class="guest-option">
-          <div class="guest-info">
-              <div class="guest-type">Adults</div>
-              <div class="guest-age">Ages 13 or above</div>
-          </div>
-          <div class="guest-controls">
-              <button class="guest-button" data-type="adults" data-action="decrement" disabled>-</button>
-              <span class="guest-count" data-type="adults">0</span>
-              <button class="guest-button" data-type="adults" data-action="increment">+</button>
-          </div>
+        <div class="guest-info">
+          <div class="guest-type">Adults</div>
+          <div class="guest-age">Ages 13 or above</div>
+        </div>
+        <div class="guest-controls">
+          <button
+            class="guest-button"
+            data-type="adults"
+            data-action="decrement"
+            disabled
+          >
+            -
+          </button>
+          <span class="guest-count" data-type="adults">0</span>
+          <button
+            class="guest-button"
+            data-type="adults"
+            data-action="increment"
+          >
+            +
+          </button>
+        </div>
       </div>
       <div class="guest-option">
-          <div class="guest-info">
-              <div class="guest-type">Children</div>
-              <div class="guest-age">Ages 2 - 12</div>
-          </div>
-          <div class="guest-controls">
-              <button class="guest-button" data-type="children" data-action="decrement" disabled>-</button>
-              <span class="guest-count" data-type="children">0</span>
-              <button class="guest-button" data-type="children" data-action="increment">+</button>
-          </div>
+        <div class="guest-info">
+          <div class="guest-type">Children</div>
+          <div class="guest-age">Ages 2 - 12</div>
+        </div>
+        <div class="guest-controls">
+          <button
+            class="guest-button"
+            data-type="children"
+            data-action="decrement"
+            disabled
+          >
+            -
+          </button>
+          <span class="guest-count" data-type="children">0</span>
+          <button
+            class="guest-button"
+            data-type="children"
+            data-action="increment"
+          >
+            +
+          </button>
+        </div>
       </div>
       <div class="guest-option">
-          <div class="guest-info">
-              <div class="guest-type">Infants</div>
-              <div class="guest-age">Under 2</div>
-          </div>
-          <div class="guest-controls">
-              <button class="guest-button" data-type="infants" data-action="decrement" disabled>-</button>
-              <span class="guest-count" data-type="infants">0</span>
-              <button class="guest-button" data-type="infants" data-action="increment">+</button>
-          </div>
+        <div class="guest-info">
+          <div class="guest-type">Infants</div>
+          <div class="guest-age">Under 2</div>
+        </div>
+        <div class="guest-controls">
+          <button
+            class="guest-button"
+            data-type="infants"
+            data-action="decrement"
+            disabled
+          >
+            -
+          </button>
+          <span class="guest-count" data-type="infants">0</span>
+          <button
+            class="guest-button"
+            data-type="infants"
+            data-action="increment"
+          >
+            +
+          </button>
+        </div>
       </div>
       <div class="guest-option">
-          <div class="guest-info">
-              <div class="guest-type">Pets</div>
-              <div class="pets-info">Bringing a service animal?</div>
-          </div>
-          <div class="guest-controls">
-              <button class="guest-button" data-type="pets" data-action="decrement" disabled>-</button>
-              <span class="guest-count" data-type="pets">0</span>
-              <button class="guest-button" data-type="pets" data-action="increment">+</button>
-          </div>
+        <div class="guest-info">
+          <div class="guest-type">Pets</div>
+          <div class="pets-info">Bringing a service animal?</div>
+        </div>
+        <div class="guest-controls">
+          <button
+            class="guest-button"
+            data-type="pets"
+            data-action="decrement"
+            disabled
+          >
+            -
+          </button>
+          <span class="guest-count" data-type="pets">0</span>
+          <button class="guest-button" data-type="pets" data-action="increment">
+            +
+          </button>
+        </div>
       </div>
-  </div>
+    </div>
 
-  <!-- end guestModal -->
+    <!-- end guestModal -->
 
     <div class="mobile-image">
       <div class="mobile-image-icon-bar">
@@ -148,7 +213,11 @@
 
         <div>
           <img src="image/share.png" alt="Menu" class="mobile-image-icon" />
-          <img src="image/love.png" alt="Menu" class="mobile-image-icon btn-save-mobile" />
+          <img
+            src="image/love.png"
+            alt="Menu"
+            class="mobile-image-icon btn-save-mobile"
+          />
         </div>
       </div>
 
@@ -181,43 +250,46 @@
       <!-- shareBtn modal -->
       <div id="shareModal" class="shareModal">
         <div class="shareModal-content">
-            <span class="close">&times;</span>
-            <div class="shareModal-header">
-                <h2>Share this place</h2>
+          <span class="close">&times;</span>
+          <div class="shareModal-header">
+            <h2>Share this place</h2>
+          </div>
+          <div class="shareModal-body">
+            <div class="place-info">
+              <img
+                src="https://via.placeholder.com/50x50?text=Apt"
+                alt="Apartment"
+              />
+              <p>Rental unit in Lima · ★New · 1 bedroom · 1 bed · 1 bath</p>
             </div>
-            <div class="shareModal-body">
-                <div class="place-info">
-                    <img src="https://via.placeholder.com/50x50?text=Apt" alt="Apartment">
-                    <p>Rental unit in Lima · ★New · 1 bedroom · 1 bed · 1 bath</p>
-                </div>
-                <div class="share-options">
-                    <div class="share-option" id="copyLink">
-                        <p>Copy Link</p>
-                    </div>
-                    <div class="share-option">
-                        <p>Email</p>
-                    </div>
-                    <div class="share-option">
-                        <p>Messages</p>
-                    </div>
-                    <div class="share-option">
-                        <p>Messenger</p>
-                    </div>
-                    <div class="share-option">
-                        <p>Facebook</p>
-                    </div>
-                    <div class="share-option">
-                        <p>Twitter</p>
-                    </div>
-                    <div class="share-option">
-                        <p>Embed</p>
-                    </div>
-                </div>
+            <div class="share-options">
+              <div class="share-option" id="copyLink">
+                <p>Copy Link</p>
+              </div>
+              <div class="share-option">
+                <p>Email</p>
+              </div>
+              <div class="share-option">
+                <p>Messages</p>
+              </div>
+              <div class="share-option">
+                <p>Messenger</p>
+              </div>
+              <div class="share-option">
+                <p>Facebook</p>
+              </div>
+              <div class="share-option">
+                <p>Twitter</p>
+              </div>
+              <div class="share-option">
+                <p>Embed</p>
+              </div>
             </div>
+          </div>
         </div>
-    </div>
-    
-    <!-- end share modal -->
+      </div>
+
+      <!-- end share modal -->
 
       <!-- image for dekstop version -->
 
@@ -240,10 +312,27 @@
             <img src="image/hotel5.jpg" alt="image" class="" />
           </div>
         </div>
+
         <div style="position: relative;">
-          <button class="show-all">Show all photos</button>
+          
+          <button class="show-all" onclick="openmodalImage(0)">Show all photos</button>
       </div>
+       
       </div>
+
+      <!-- image modal -->
+
+      <div id="mymodalImage" class="modalImage">
+        <span class="close" onclick="closemodalImage()">&times;</span>
+        <img class="modalImage-content" id="modalImageImage">
+        <div class="image-count" id="imageCount"></div>
+        <a class="prev" onclick="changeImage(-1)">&#10094;</a>
+        <a class="next" onclick="changeImage(1)">&#10095;</a>
+     </div>
+
+     <!-- end image modal --> 
+
+      
 
       <div class="content-wrapper">
         <div class="left-column">
